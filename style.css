@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(9, 7, 51); */
+    background-image: linear-gradient(to right, rgb(7, 9, 91), rgb(47, 47, 177));
+    color: white;
+    padding: 5px 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: 12px;
+    font-family: "Playwrite AU QLD", cursive;
+    transition: all 0.5s;
+    
+}
+nav ul li a{
+    color: white;
+    text-decoration:none;
+    
+}
+nav ul li a:hover{
+    color: rgb(203, 88, 176);
+    text-decoration:none;
+     transition: all 0.5s;
+    
+}
+
+.logo {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Playwrite AU QLD", cursive;
+}
+
+.hero {
+    background-image: linear-gradient(to right, rgb(71, 199, 71), rgb(211, 111, 201));
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+
+
+}
+
+.hero-left .one {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(67, 54, 67);
+    font-weight: bolder;
+}
+
+.hero-left .two {
+    font-size: 40px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.hero-right img {
+    border-radius: 14px;
+}
+
+.btn {
+    background-color: purple;
+    color: white;
+    padding: 7px 9px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+/* .btn:hover{ 
+    background-color: rgb(42, 42, 75);
+ } */
+.projects {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right,rgb(228, 145, 213), rgb(126, 234, 145));
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 25px;
+    border: 2px solid rgb(222, 209, 218);
+    padding: 22px 100px;
+}
+
+.project-image img {
+    width: 49.5vw;
+    margin: 35px;
+    border-radius:24px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.project-info .text {
+    font-size: 27px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.project-info p {
+    padding: 12px 0;
+}
+.row-reverse{
+    flex-direction: row-reverse;
+}
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer{
+    background-color: rgb(22, 16, 21);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+@media screen  and (max-width:950px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .projects{
+        padding: 1px;
+    }
+    @media screen and (max-width:650px){
+        .hero-left .one{
+            font-size: 40px;
+            text-align: center;
+        }
+        .hero-left .two{
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+    .projects{
+        flex-direction: column;
+    }
+    .project-image img {
+    width: 80vw;
+    margin: 15px 35px;
+    border-radius: 24px;
+}
+.project-info{
+    padding: 5px 23px;
+}
+}
